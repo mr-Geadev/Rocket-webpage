@@ -1,17 +1,13 @@
 // out: main.css, sourcemap: false, compress: true
-
-
 @green: #24B47E;
 @blue: #1D3D9B;
-
 @font-face {
     font-family: NunitoSans-Regular;
-    src: url(fonts/Nunito-Regular.ttf);
+    src: url("fonts/Nunito-Regular.ttf");
 }
-
 @font-face {
     font-family: NunitoSans-Bold;
-    src: url(fonts/Nunito-Bold.ttf);
+    src: url("fonts/Nunito-Bold.ttf");
 }
 
 body {
@@ -20,7 +16,8 @@ body {
 }
 
 .container {
-    width: 940px;
+    width: 95%;
+    max-width: 940px;
     margin: auto;
 }
 
@@ -66,7 +63,7 @@ p {
     border-radius: 100px;
     font-family: NunitoSans-Regular;
     font-size: 14px;
-    color:@green;
+    color: @green;
     letter-spacing: 0;
     padding: 11px 22px;
     transition-property: box-shadow;
@@ -82,11 +79,11 @@ p {
 header {
     .menu {
         margin: 51px auto 0;
-        width: 311px;
+        max-width: 311px;
         display: flex;
         justify-content: space-between;
 
-        li {
+        a {
             font-family: Roboto-Regular;
             font-size: 14px;
             color: #31475E;
@@ -101,7 +98,7 @@ header {
     }
 
     .h1 {
-        width: 626px;
+        max-width: 626px;
         margin: 132px auto 0;
         text-align: center;
     }
@@ -110,17 +107,18 @@ header {
 .banner {
     margin-top: 139px;
     width: 100%;
-    height: 748px;
-    background-image: url("../images/banner.jpg");
-    background-position: center;
-    background-size: cover;
+
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 
 .description {
     margin-top: 108px;
 
     .h2 {
-        width: 484px;
+        max-width: 484px;
         display: inline-block;
 
         span {
@@ -142,7 +140,7 @@ header {
         margin-top: 24px;
 
         p {
-            width: 455px;
+            max-width: 455px;
         }
     }
 
@@ -155,7 +153,7 @@ header {
     margin-top: 90px;
 
     .h2 {
-        width: 736px;
+        max-width: 736px;
         margin: auto;
         text-align: center;
 
@@ -171,6 +169,8 @@ header {
 
         article {
             width: 300px;
+            min-width: 240px;
+            margin: 2px;
             box-shadow: 0 8px 20px 0 rgba(224,224,224,0.50);
             border-radius: 3px;
             position: relative;
@@ -201,7 +201,7 @@ header {
                 box-shadow: 0 8px 20px 0 rgba(224,224,224,0.50);
                 top: 100%;
                 display: block;
-                width: 300px;
+                width: 100%;
                 height: 6px;
                 background-color: @green;
                 opacity: 0;
@@ -218,7 +218,7 @@ header {
     margin-top: 101px;
 
     .container > div {
-        width: 705px;
+        max-width: 705px;
     }
 
     .h2 {
@@ -326,7 +326,7 @@ header {
     margin-top: 107px;
 
     .flex-wrap {
-        width: 641px;
+        max-width: 641px;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -424,8 +424,4 @@ footer {
 
 .bottomLogo {
     margin-top: 48px;
-
-    .logo {
-        margin: auto;
-    }
 }

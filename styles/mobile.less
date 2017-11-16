@@ -1,0 +1,151 @@
+// out: mobile.css, sourcemap: false, compress: true
+@media (max-width: 1024px) {
+    p {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 22px 33px;
+    }
+
+    header {
+        .menu li a {
+            font-size: 18px;
+        };
+
+        .h1 {
+            margin-top: 32px;
+        }
+    }
+
+    .banner {
+        margin-top: 39px;
+    }
+
+    .description {
+        p {
+            margin: 10px;
+        }
+    }
+
+    .howItWork article {
+        margin: 3px;
+    }
+
+    footer .socialNetwork a {
+        font-size: 15px;
+    }
+}
+@media (max-width: 640px) {
+    .typeOfDesign .flex-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        article {
+            margin-top: 20px;
+        }
+    }
+
+    .exampleOfProjects article img {
+        display: block;
+        max-width: 32%;
+    }
+
+    .howItWork {
+        article {
+            padding: 40px 40px 40px 50px;
+            position: relative;
+
+            h3 {
+                height: 50rpx;
+            }
+
+            button {
+                position: absolute;
+                bottom: 40px;
+            }
+        }
+
+        .circules {
+            z-index: 1;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .description {
+        article {
+            flex-wrap: wrap;
+        }
+
+        .button {
+            margin: 20px auto 0;
+            display: block;
+        }
+    }
+
+    .exampleOfProjects {
+        article {
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .howItWork {
+        .container {
+            flex-wrap: wrap;
+
+            .circules {
+                display: none;
+            }
+
+            article button:hover {
+                position: absolute;
+                top: auto;
+                left: 49px;
+                bottom: 39px;
+            }
+        }
+    }
+
+    .links {
+        .flex-wrap {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            span {
+                margin: 13px 10px;
+            }
+        }
+    }
+
+    footer .container {
+        flex-wrap: wrap-reverse;
+
+        div {
+            width: 100%;
+        }
+
+        .socialNetwork ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contacts {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
+@media (max-width:360px) {
+    footer .container .socialNetwork ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
